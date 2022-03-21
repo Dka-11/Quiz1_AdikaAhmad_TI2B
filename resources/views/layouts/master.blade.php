@@ -29,12 +29,19 @@
 </head>
 
 <body>
+    @if ($title == 'Portfolio Details')
+    @else
+        @include('partials.header')
+    @endif
 
-    @include('partials.header')
     <div>
         @yield('container')
     </div>
-    @include('partials.footer')
+
+    @if ($title == 'Portfolio Details')
+    @else
+        @include('partials.footer')
+    @endif
 
 </body>
 
