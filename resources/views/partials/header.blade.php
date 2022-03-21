@@ -8,49 +8,12 @@
 
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-                @if ($title == 'Index')
-                    <li><a class="active" href="{{ route('index') }}">Home</a></li> {{-- Active --}}
-                    <li><a href="{{ route('about') }}">About</a></li>
-                    <li><a href="{{ route('resume') }}">Resume</a></li>
-                    <li><a href="{{ route('services') }}">Services</a></li>
-                    <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
-                    <li><a href="{{ route('contact') }}">Contact</a></li>
-                @elseif ($title == 'About')
-                    <li><a href="{{ route('index') }}">Home</a></li>
-                    <li><a class="active" href="{{ route('about') }}">About</a></li> {{-- Active --}}
-                    <li><a href="{{ route('resume') }}">Resume</a></li>
-                    <li><a href="{{ route('services') }}">Services</a></li>
-                    <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
-                    <li><a href="{{ route('contact') }}">Contact</a></li>
-                @elseif ($title == 'Resume')
-                    <li><a href="{{ route('index') }}">Home</a></li>
-                    <li><a href="{{ route('about') }}">About</a></li>
-                    <li><a class="active" href="{{ route('resume') }}">Resume</a></li> {{-- Active --}}
-                    <li><a href="{{ route('services') }}">Services</a></li>
-                    <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
-                    <li><a href="{{ route('contact') }}">Contact</a></li>
-                @elseif ($title == 'Services')
-                    <li><a href="{{ route('index') }}">Home</a></li>
-                    <li><a href="{{ route('about') }}">About</a></li>
-                    <li><a href="{{ route('resume') }}">Resume</a></li>
-                    <li><a class="active" href="{{ route('services') }}">Services</a></li> {{-- Active --}}
-                    <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
-                    <li><a href="{{ route('contact') }}">Contact</a></li>
-                @elseif ($title == 'Portfolio')
-                    <li><a href="{{ route('index') }}">Home</a></li>
-                    <li><a href="{{ route('about') }}">About</a></li>
-                    <li><a href="{{ route('resume') }}">Resume</a></li>
-                    <li><a href="{{ route('services') }}">Services</a></li>
-                    <li><a class="active" href="{{ route('portfolio') }}">Portfolio</a></li> {{-- Active --}}
-                    <li><a href="{{ route('contact') }}">Contact</a></li>
-                @elseif ($title == 'Contact')
-                    <li><a href="{{ route('index') }}">Home</a></li>
-                    <li><a href="{{ route('about') }}">About</a></li>
-                    <li><a href="{{ route('resume') }}">Resume</a></li>
-                    <li><a href="{{ route('services') }}">Services</a></li>
-                    <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
-                    <li><a class="active" href="{{ route('contact') }}">Contact</a></li> {{-- Active --}}
-                @endif
+                <li><a class="nav-link {{ $title == 'Index' ? 'active' : '' }}" href="/index">Home</a></li>
+                <li><a class="nav-link {{ $title == 'About' ? 'active' : '' }}" href="/about">About</a></li>
+                <li><a class="nav-link {{ $title == 'Resume' ? 'active' : '' }}" href="/resume">Resume</a></li>
+                <li><a class="nav-link {{ $title == 'Services' ? 'active' : '' }}" href="/services">Services</a></li>
+                <li><a class="nav-link {{ $title == 'Portfolio' ? 'active' : '' }}" href="/portfolio">Portfolio</a></li>
+                <li><a class="nav-link {{ $title == 'Contact' ? 'active' : '' }}" href="/contact">Contact</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
