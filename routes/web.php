@@ -24,7 +24,7 @@ Route::get('/', function () {
 
 Route::get('/index', [IndexController::class, 'index'])->name('index');
 
-Route::get('/about', [AboutController::class, 'index'])->name('index');
+Route::get('/about', [AboutController::class, 'index'])->name('about');
 
 Route::get('/resume', [ResumeController::class, 'index'])->name('resume');
 
