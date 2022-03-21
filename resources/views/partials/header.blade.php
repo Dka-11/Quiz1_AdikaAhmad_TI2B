@@ -8,15 +8,12 @@
 
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-                <li><a class="nav-link {{ $title == 'Index' ? 'active' : '' }}" href="/index">Home</a>
-                </li>
-                <li><a class="nav-link {{ $title == 'About' ? 'active' : '' }}" href="/about">About</a>
-                </li>
-                <li><a class="nav-link {{ $title == 'Resume' ? 'active' : '' }}" href="/resume">Resume</a></li>
-                <li><a class="nav-link {{ $title == 'Services' ? 'active' : '' }}" href="/services">Services</a></li>
-                <li><a class="nav-link {{ $title == 'Portfolio' ? 'active' : '' }}" href="/portfolio">Portfolio</a>
-                </li>
-                <li><a class="nav-link {{ $title == 'Contact' ? 'active' : '' }}" href="/contact">Contact</a></li>
+                <li><a {{ $title == 'Index' ? 'active' : '' }} href="/index">Home</a></li>
+                <li><a {{ $title == 'About' ? 'active' : '' }} href="/about">About</a></li>
+                <li><a {{ $title == 'Resume' ? 'active' : '' }} href="/resume">Resume</a></li>
+                <li><a {{ $title == 'Services' ? 'active' : '' }} href="/services">Services</a></li>
+                <li><a {{ $title == 'Portfolio' ? 'active' : '' }} href="/portfolio">Portfolio</a></li>
+                <li><a {{ $title == 'Contact' ? 'active' : '' }} href="/contact">Contact</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
