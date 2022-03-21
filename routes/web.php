@@ -1,11 +1,13 @@
 <?php
 
-use App\Http\Controllers\AboutController;
-use App\Http\Controllers\ContactController;
-use App\Http\Controllers\IndexController;
-use App\Http\Controllers\PortfolioDetailsController;
-use App\Http\Controllers\ResumeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ResumeController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\PortfolioDetailsController;
 
 /*
 |--------------------------------------------------------------------------
